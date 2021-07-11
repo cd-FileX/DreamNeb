@@ -439,8 +439,7 @@
 
 .menu-3sdvDG .separator-2I32lJ {
     color: white;
-    height: 2px;
-    margin: 3px;
+    display: flex;
 }
 
 .item-1tOPte {
