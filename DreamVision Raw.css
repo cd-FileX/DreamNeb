@@ -125,10 +125,18 @@
 .typeWindows-1za-n7 > .wordmark-2iDDfm:after, .container-3baos1:before, .container-3baos1:after {display: none;}
 .typeWindows-1za-n7 > .wordmark-2iDDfm:before {content: "CV | Xerons & FlexGames Edit";}
 
-/* what shall I call this?? Credits? Marking the authors of this edit? */
+/* what should I call this?? Credits? Marking the authors of this edit? */
 
 .message-2qnXI6[data-user-id*="863504815706079272"] > div.contents-2mQqc9 > h2 > span.headerText-3Uvj1Y > span:after {
     content: "DreamVision Editor";
+}
+
+/* on selecting text in the app */
+
+::selection {
+    color: white;
+    background-color: rgba(202, 0, 67, 0.726);
+    transition: all 90ms ease-in-out;
 }
 
 /* search in Home Tab */ 
@@ -340,8 +348,8 @@
 }
 
 .wrapper-3BZGuR:active {
-    -webkit-animation: breath 7s linear infinite;
-            animation: breath 7s linear infinite;
+    -webkit-animation: breath 4s ease-in-out infinite;
+            animation: breath 4s ease-in-out infinite;
 }
 
 @-webkit-keyframes breath {
@@ -380,7 +388,7 @@
     box-shadow: 0 0 0 2px var(--main-color), inset 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
-#channels > div > div:nth-child(23) > div.list-2luk8a.collapsed-21_y8I div > div > div:after {
+div > div.list-2luk8a.collapsed-21_y8I div > div > div:after {
     content: "";
     position: absolute;
     width: 0;
@@ -436,12 +444,6 @@
 }
 
 /* Selection Menu */
-
-.menu-3sdvDG .separator-2I32lJ {
-    color: white;
-    margin: 3px;
-    height: 2px;
-}
 
 .item-1tOPte {
     opacity: 0.5;
@@ -509,7 +511,7 @@
 .operations-36ENbA {
     margin-left: 57px;
 }
-/* reply picture icon */
+/* replies */
 
 .content-1o0f9g {
     background-color: rgb(0, 0, 0);
@@ -1168,7 +1170,7 @@ button[aria-label="Send en gave"], button[aria-label="Ein Geschenk senden"], but
 }
 
 
-/* Members Hide user panel (also background of it to block the gradient stuff of the message input)*/
+/* Hide Member List (also background of it to block the gradient stuff of the message input)*/
 
 .membersWrap-2h-GB4 {
     background: var(--background-image) var(--background-position)/var(--background-size) var(--background-repeat) var(--background-attachment);
@@ -1179,7 +1181,7 @@ button[aria-label="Send en gave"], button[aria-label="Ein Geschenk senden"], but
     min-width:70px!important;
     max-width:240px!important;
     width:60px;
-        transition: width 125ms;
+    transition: width 125ms;
 }
 
 .membersWrap-2h-GB4:not(#dv-mount) .membersGroup-v9BXpm > span {
