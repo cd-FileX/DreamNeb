@@ -1,0 +1,12 @@
+/* hiding microphone,.. at bottom-left */
+.container-3baos1:last-child .noWrap-3jynv6 {
+    width: 0px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 250ms ease-in-out;
+}
+.container-3baos1:hover .noWrap-3jynv6 {
+    width: 150px;
+    opacity: 1;
+    pointer-events: all;
+}
