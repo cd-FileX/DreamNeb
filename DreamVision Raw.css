@@ -114,6 +114,7 @@
     /*  GRADIENT  */
     --gradient: linear-gradient(215deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     --gradient2: linear-gradient(215deg, rgb(112, 255, 219) 0%, rgb(80, 142, 200) 46%, rgb(67, 65, 208) 100%);
+    --gradient2-d: linear-gradient(215deg, rgba(56, 134, 115, 0.76) 0%, rgba(43, 78, 110, 0.76) 46%, rgba(39, 37, 124, 0.76) 100%);
     --gradient3: linear-gradient(215deg, rgba(64, 87, 208, 0.4) 0%, rgba(200, 80, 192, 0.4) 46%, rgba(255, 204, 112, 0.4) 100%);
     --gradient4: linear-gradient(215deg, rgba(64, 87, 208, 0.2) 0%, rgba(200, 80, 192, 0.2) 46%, rgba(255, 204, 112, 0.2) 100%);
 }
@@ -125,18 +126,76 @@
 .typeWindows-1za-n7 > .wordmark-2iDDfm:after, .container-3baos1:before, .container-3baos1:after {display: none;}
 .typeWindows-1za-n7 > .wordmark-2iDDfm:before {content: "CV | Xerons & FlexGames Edit";}
 
-/* what should I call this?? Credits? Marking the authors of this edit? */
+/* Creator & Editor Mention */
 
-.message-2qnXI6[data-user-id*="863504815706079272"] > div.contents-2mQqc9 > h2 > span.headerText-3Uvj1Y > span:after {
+.contents-2mQqc9 > img[src*="457051218821251073"] ~ .header-23xsNx > .headerText-3Uvj1Y > .username-1A8OIy:after {
     content: "DreamVision Editor";
+    border-radius: 4px;
+    height: 20px;
+    width: 85px;
+    padding: 0 6px;
+    display: flex;
+    align-items: center;
+    border: 1px solid currentColor;
+    border-left: 2px;
+    border-right: 2px;
+    background-image: var(--gradient2-d);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.userPopout-xaxa6l[data-user-id="457051218821251073"] .headerTop-3vNv-a .profileBadges-ohc0Vu:before {
+    content: "DreamVision Editor";
+    border-radius: 5px;
+    height: 20px;
+    width: 90px;
+    box-shadow: 0 0 5px 1px white, 0 0 2px 1px inset white;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    padding: 3px 8px;
+    display: flex;
+    align-items: center;
+    background-image: var(--gradient2-d);
+    font-size: 11px;
+    color: white;
+    margin-right: 5px;
+}
+
+.contents-2mQqc9 > img[src*="177838143100289024"] ~ .header-23xsNx > .headerText-3Uvj1Y > .username-1A8OIy:after {
+    content: "DreamVision Creator";
+    border-radius: 4px;
+    height: 20px;
+    width: 90px;
+    padding: 0 6px;
+    display: flex;
+    align-items: center;
+    border: 1px solid currentColor;
+    border-left: 2px;
+    border-right: 2px;
+    background-image: var(--gradient3);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.userPopout-xaxa6l[data-user-id="177838143100289024"] .headerTop-3vNv-a .profileBadges-ohc0Vu:before {
+    content: "DreamVision Creator";
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    box-shadow: 0 0 5px 1px white, 0 0 2px 1px inset white;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    padding: 1px 6px;
+    display: flex;
+    align-items: center;
+    background-image: var(--gradient3);
+    font-size: 11px;
+    color: white;
+    margin-right: 5px;
+    text-align: center;
 }
 
 /* on selecting text in the app */
 
 ::selection {
     color: white;
-    background-color: rgba(202, 0, 67, 0.726);
-    transition: all 90ms ease-in-out;
+    background-color: rgba(202, 0, 67, 0.267);
 }
 
 /* search in Home Tab */ 
@@ -461,6 +520,11 @@ div > div.list-2luk8a.collapsed-21_y8I div > div > div:after {
 
 /*User Popout DM & Note*/
 
+.profileBadges-ohc0Vu, .profileBadges-ohc0Vu > div {
+    align-items: center;
+    margin-bottom: 0px;
+}
+
 .inputWrapper-31_8H8:not(.emojiAliasInput-1y-NBz){
         border: double 0.01em transparent;
     border-radius: 5px;
@@ -500,6 +564,12 @@ div > div.list-2luk8a.collapsed-21_y8I div > div > div:after {
 }
 
 /*8.b. Messages*/
+
+/* Removing margin after Name (& Badge) so it doesn't look weird */
+
+.message-2qnXI6 .contents-2mQqc9 .header-23xsNx .headerText-3Uvj1Y {
+    margin-right: 0px !important;
+}
 
 /* when editing message */
 
@@ -591,7 +661,7 @@ div > div.list-2luk8a.collapsed-21_y8I div > div > div:after {
     border-top: 2px solid rgba(255, 255, 255, 0.1) !important;
     margin: 0 20px;
     padding-right:0;
-    border-radius: 3px;
+    border-radius: 6px;
     height: min-content;
 }
 
@@ -602,7 +672,6 @@ div > div.list-2luk8a.collapsed-21_y8I div > div > div:after {
     border-top: 2px solid rgba(0, 255, 255, 0.1) !important;
     background-color: rgba(0, 140, 255, 0.123) !important;
 }
-
 
 .cozy-3raOZG.wrapper-2a6GCs {
     padding-top:0;
@@ -660,12 +729,11 @@ div > div.list-2luk8a.collapsed-21_y8I div > div > div:after {
 .cozy-3raOZG .header-23xsNx .username-1A8OIy {
     border-left: 3px solid currentColor;
     height: 40px;
-    padding-left: 8px;
-    padding-top: 1px;
+    padding: 1px 10px 0 8px;
     line-height: normal;
     vertical-align: middle;
     align-items: center;
-    box-shadow: inset 10px 0 10px -12px currentColor;
+    box-shadow: inset 10px 0 10px -8px currentColor;
     text-shadow: 0 0 12px currentColor;
     font-size: var(--size1);
     display: inline-flex;
@@ -1011,6 +1079,28 @@ color: rgba(255, 0, 0, 0.35)
 
 /* Update 1.1 Stuff */
 
+/* video & screen share button */
+#app-mount > div.app-1q1i1E > div > div.layers-3iHuyZ.layers-3q14ss > div > div > div > div > div.sidebar-2K8pFh > section > div.wrapper-24pKcD > div > div.actionButtons-14eAc_ > button {
+    border-radius: 12px;
+    transition: all .2s ease;
+    background: var(--gradient2-d) !important;
+    opacity: 0.5;
+}
+
+#app-mount > div.app-1q1i1E > div > div.layers-3iHuyZ.layers-3q14ss > div > div > div > div > div.sidebar-2K8pFh > section > div.wrapper-24pKcD > div > div.actionButtons-14eAc_ > button:hover {
+    border-radius: 12px;
+    transition: all .2s ease;
+    background: var(--gradient2) !important;
+    opacity: 1;
+}
+
+#app-mount > div.app-1q1i1E > div > div.layers-3iHuyZ.layers-3q14ss > div > div > div > div > div.sidebar-2K8pFh > section > div.wrapper-24pKcD > div > div.actionButtons-14eAc_ > span {
+    border-radius: 12px;
+    transition: all .2s ease;
+    filter: grayscale(100%);
+    opacity: 1;
+}
+
 /* Boost Server Stuff */
 .planSelectorWrapper-26xZEm .inputWrapper-31_8H8 {
     border-radius: 0px;
@@ -1344,7 +1434,13 @@ button[aria-label="Send en gave"], button[aria-label="Ein Geschenk senden"], but
     border: var(--gradient);
 }
 
-/* Settings spin */
+/* Settings */
+
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:hover:before {
+    transform: scale(1.1);
+    transition: all 0.15s ease-in-out;
+}
+
 /* Cv spin All Langs - ONLY HITS USER SETTINGS */
 .container-3baos1 .button-14-BFJ[aria-label="Brugerindstillinger"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="Ajustes de usuario"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="Benutzereinstellungen"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="User Settings"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="Paramètres utilisateur"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="Korisničke postavke"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="Impostazioni utente"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="Naudotojo Nustatymai"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="Felhasználói beállítások"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label=Gebruikersinstellingen]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="Brukerinnstillinger"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="Ustawienia użytkownika"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="Configurações de Usuário"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="Setări utilizator"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="Käyttäjäasetukset"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="Användarinställningar"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="Cài đặt người dùng"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="Kullanıcı Ayarları"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="Uživatelská nastavení"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="Ρυθμίσεις χρήστη"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="Потребителски настройки"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="Настройки пользователя"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="Користувацькі налаштування"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="ตั้งค่าผู้ใช้"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="用户设置"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="ユーザー設定"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="使用者設定"]:hover > .contents-18-Yxp > svg, .container-3baos1 .button-14-BFJ[aria-label="사용자 설정"]:hover > .contents-18-Yxp > svg {
     -webkit-animation: cv-spin 2.5s linear infinite;
