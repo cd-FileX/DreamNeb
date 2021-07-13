@@ -128,7 +128,9 @@
 
 /* Creator & Editor Mention */
 
-.contents-2mQqc9 > img[src*="457051218821251073"] ~ .header-23xsNx > .headerText-3Uvj1Y > .username-1A8OIy:after {
+/* FG */
+
+.contents-2mQqc9 > img[src*="457051218821251073"] ~ .header-23xsNx > .headerText-3Uvj1Y > .username-1A8OIy:after { /* MESSAGE */
     content: "DreamVision Editor";
     border-radius: 4px;
     height: 20px;
@@ -143,7 +145,7 @@
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
-.userPopout-xaxa6l[data-user-id="457051218821251073"] .headerTop-3vNv-a .profileBadges-ohc0Vu:before {
+.userPopout-xaxa6l[data-user-id="457051218821251073"] .headerTop-3vNv-a .profileBadges-ohc0Vu:before { /* USER POPOUT */
     content: "DreamVision Editor";
     border-radius: 5px;
     height: 20px;
@@ -159,7 +161,25 @@
     margin-right: 5px;
 }
 
-.contents-2mQqc9 > img[src*="177838143100289024"] ~ .header-23xsNx > .headerText-3Uvj1Y > .username-1A8OIy:after {
+.root-3QyAh1[data-user-id="457051218821251073"] .topSection-y3p-_D .badgeList-1R1WgZ:before { /* PROFILE */
+    content: "DreamVision Editor";
+    border-radius: 5px;
+    height: 20px;
+    width: 90px;
+    box-shadow: 0 0 5px 1px white, 0 0 2px 1px inset white;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    padding: 3px 8px;
+    display: flex;
+    align-items: center;
+    background-image: var(--gradient2-d);
+    font-size: 11px;
+    color: white;
+    margin-right: 5px;
+}
+
+/* XERONS */
+
+.contents-2mQqc9 > img[src*="177838143100289024"] ~ .header-23xsNx > .headerText-3Uvj1Y > .username-1A8OIy:after { /* MESSAGE */
     content: "DreamVision Creator";
     border-radius: 4px;
     height: 20px;
@@ -174,7 +194,24 @@
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
-.userPopout-xaxa6l[data-user-id="177838143100289024"] .headerTop-3vNv-a .profileBadges-ohc0Vu:before {
+.userPopout-xaxa6l[data-user-id="177838143100289024"] .headerTop-3vNv-a .profileBadges-ohc0Vu:before { /* USER POPOUT */
+    content: "DreamVision Creator";
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    box-shadow: 0 0 5px 1px white, 0 0 2px 1px inset white;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    padding: 1px 6px;
+    display: flex;
+    align-items: center;
+    background-image: var(--gradient3);
+    font-size: 11px;
+    color: white;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.root-3QyAh1[data-user-id="177838143100289024"] .topSection-y3p-_D .badgeList-1R1WgZ:before { /* PROFILE */
     content: "DreamVision Creator";
     border-radius: 5px;
     height: 30px;
@@ -280,6 +317,10 @@
 
 .avatar-37jOim.wrapper-3t9DeA {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), var(--background-image) var(--background-position)/var(--background-size) var(--background-repeat) var(--background-attachment);
+}
+
+.badgeList-1R1WgZ {
+    align-items: center;
 }
 
 /*channel colours*/
