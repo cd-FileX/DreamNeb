@@ -1,0 +1,11 @@
+- Make and use a lot more variables (If possible do overwork together)
+- Performance Update > Either more precise / single animations so we ain't got that large stuff going on 
+  
+   -> Especially the member list hide or if large things like starting a stream are going on
+  - Maybe some performance reducing or even a performance mode with no animations/transitions and all that stuff
+- Overwork inputs
+- Message Header Blur Fix
+- Better Separators in Messages, New Messages, Settings and right Click Menu
+- Plugin Support/Designing
+- Video Call Bottom Buttons
+- Maybe some secrets
