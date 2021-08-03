@@ -1,2 +1,2 @@
-# DreamVision1.1
-A dreamy and modern blue/RGB Edit of ClearVision by Zerthox
+ # DreamNeb
+Dreamy blue / RGB theme for BD by Xerons & FlexGames
